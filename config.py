@@ -1,7 +1,11 @@
-from boto.s3.connection import S3Connection
-# this is what Heroku says to do but I suspect there's more to it because I don't use S3 for this bot?
-s3 = S3Connection(os.environ['S3_KEY'], os.environ['S3_SECRET'])
-
+client_id = os.environ['client_id']
+client_secret = os.environ['client_secret']
+redirect_ui = os.environ['redirect_ui']
+refresh_token = os.environ['refresh_token']
+password = os.environ['password']
+username = os.environ['username']
+user_agent = os.environ['user_agent']
+subname = os.environ['subname']
 keywords = ["!helped", "helped!", "thank you!", "that helps", "that helped", "helpful!", "thank you very much"]
 flairs = {
 	1: {
